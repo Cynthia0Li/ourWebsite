@@ -206,7 +206,7 @@
                     <div class="navholder"></div>
                     <h2>婚礼信息</h2>
                     <div class="title-underline text-center">
-                        <img src="img/love.svg" alt="love">
+                        <img id="backToBeijing" src="img/love.svg" alt="love">
                     </div>                    
                     <h3 class="section-heading"></h3>
                     <div class="row">
@@ -216,7 +216,7 @@
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <p class="percentage">婚礼地点<br></p>
-                            <p class="taghome">大连</p>
+                            <p id="hisHome" class="taghome">大连</p>
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <p class="percentage">回门宴时间</p>
@@ -224,7 +224,7 @@
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <p class="percentage">回门宴地点</p>
-                            <p class="taghome">大同</p>
+                            <p id="herHome" class="taghome">大同</p>
                         </div>
                     </div>
 
@@ -245,15 +245,21 @@
     <!--婚礼信息 结束 -->
     
     <!--来宾登记 开始 -->
+    
     <section id="section-register">
         <div class="container text-center">
             <div class="navholder"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="hr2">
+                </div>
+            </div>
             <div class="row text-center">
                 <h2>来宾登记</h2>
                 <div class="title-underline text-center">
                     <img src="img/love.svg" alt="love">
                 </div>                
-                <div class="row" id="registerForm">
+                <div class="col-md-8 col-md-offset-2 col-sm-12" id="registerForm">
                    <form>
                         <div class="input-wrap">
                             <label for="name">宾客姓名:</label>
@@ -314,11 +320,56 @@
             center: [116.3656960000,39.9911550000]
         });
         var marker = new AMap.Marker({
-        icon : 'img/2.png',//24px*24px
-        position : [116.3656960000,39.9911550000],
-        offset : new AMap.Pixel(-12,-12),
-        map : map111
-});
+            icon : 'img/2.png',//24px*24px
+            position : [116.3656960000,39.9911550000],
+            offset : new AMap.Pixel(-12,-12),
+            map : map111
+        });
+        
+        $("#hisHome").click(function(){
+            map111 = new AMap.Map('container', {
+                mapStyle: 'amap://styles/18d680e30e137dff8d14d90bb099ce57',
+                resizeEnable: true,
+                zoom: 500,
+                center: [122.0184677839, 39.6277880180]
+            });
+            marker = new AMap.Marker({
+                icon : 'img/2.png',//24px*24px
+                position : [122.0184677839, 39.6277880180],
+                offset : new AMap.Pixel(-12,-12),
+                map : map111
+            });
+        });
+        
+        $("#herHome").click(function(){
+            map111 = new AMap.Map('container', {
+                mapStyle: 'amap://styles/18d680e30e137dff8d14d90bb099ce57',
+                resizeEnable: true,
+                zoom: 500,
+                center: [113.1798756123,40.0396489960]
+            });
+            marker = new AMap.Marker({
+                icon : 'img/2.png',//24px*24px
+                position : [113.1798756123,40.0396489960],
+                offset : new AMap.Pixel(-12,-12),
+                map : map111
+            });
+        });
+        
+        $("#backToBeijing").click(function(){
+            map111 = new AMap.Map('container', {
+                mapStyle: 'amap://styles/18d680e30e137dff8d14d90bb099ce57',
+                resizeEnable: true,
+                zoom: 500,
+                center: [116.3656960000,39.9911550000]
+            });
+            marker = new AMap.Marker({
+                icon : 'img/2.png',//24px*24px
+                position : [116.3656960000,39.9911550000],
+                offset : new AMap.Pixel(-12,-12),
+                map : map111
+            });
+        });
         
         //submit the form
         $("form").submit(function(e){

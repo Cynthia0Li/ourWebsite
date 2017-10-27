@@ -16,12 +16,16 @@ img {
 body {
     margin:0;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 0px;    
+    background-color: rgb(34,34,34);          
+    color:azure;    
+}
+
+#section-message {
     background-image:url(/img/background.png);
     background-repeat: no-repeat;
     background-color: rgb(34,34,34);
-    background-position: bottom;    
-    color:azure;    
+    background-position: bottom; 
 }
 
 .navholder {
@@ -97,41 +101,45 @@ body {
 #male, #female {
     width:45%;
     display:inline-block;
-    opacity:0.8;
+    opacity:1;
 }
 
 #male:hover{
-    opacity:0.5;
+    opacity:1;
 }
 
 #female:hover{
-    opacity:0.5;
+    opacity:1;
 }
 
 #contactMessage p {
-    opacity:1;
-    position: absolute;    
-    background-color: aqua;
+    font-size: 20px;
+    font-family: "MicrosoftJhengHei",华文细黑,STHeiti,MingLiu,"Microsoft YaHei",微软雅黑;
+    position: absolute; 
+    border: 2px yellow solid;
+    background-color: transparent;
+    background:linear-gradient(red, blue);
     width:300px;
     height:400px;
-    display:none;
 }
 
 #contactMale {
-    left:-100px;
+    left:0%;
+    top:30%;
 }
 
 #contactFemale {
-    right:-100px;
+    right:0%;
+    top:30%;
 }
 
 #registerForm {
-    line-height: normal;
+    line-height: normal;    
     opacity:0.9;
     background-color: transparent;
     background-image: url(/img/registerimg.png);
-    border-radius: 40px；
-    border:5px solid red; 
+    border: 6px solid rgba(249,113,119,0.8);
+    border-radius: 30px;
     padding-top: 50px;
     background-size:600px 60px;
     background-repeat:no-repeat;

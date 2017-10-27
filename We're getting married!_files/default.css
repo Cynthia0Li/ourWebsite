@@ -1,0 +1,465 @@
+/* Jonathan Dietz */
+
+
+/* Fonts */
+@font-face {
+	font-family: 'KnockoutHTF49-Liteweight';
+	src: url('knockout-htf49-liteweight-webfont.eot');
+	src: local('☺'), url('../fonts/knockout-htf49-liteweight-webfont.woff') format('woff'), url('../fonts/knockout-htf49-liteweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf49-liteweight-webfont.svg#webfontvEHoer7Y') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KnockoutHTF48-Featherweight';
+	src: url('../fonts/knockout-htf48-featherweight-webfont.eot');
+	src: local('☺'), url('../fonts/knockout-htf48-featherweight-webfont.woff') format('woff'), url('../fonts/knockout-htf48-featherweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf48-featherweight-webfont.svg#webfontc4nlxym6') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KnockoutHTF29-JuniorLiteweigh';
+	src: url('../fonts/knockout-htf29-juniorliteweight-webfont.eot');
+	src: local('☺'), url('../fonts/knockout-htf29-juniorliteweight-webfont.woff') format('woff'), url('../fonts/knockout-htf29-juniorliteweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf29-juniorliteweight-webfont.svg#webfontlU0EtOKV') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*******************************/
+
+
+body {
+  background: url("../img/bg-footer.jpg") no-repeat scroll center bottom transparent;
+  font-family: georgia;
+  padding-bottom: 275px;
+}
+a {
+  color:#d53535;
+  text-decoration:underline;
+}
+p {
+  color: #8F8F8F;
+  line-height: 1.5;
+  margin: 0 0 15px;
+}
+.fineprint {font-size: 0.7em;}
+#global-wrap {}
+#header {
+  background: url("../img/bg-menu-shadow.png") repeat-x scroll center bottom transparent;
+  padding: 0 0 13px;
+  position: fixed;
+  top: -115px;
+  width: 100%;
+  z-index: 100;
+}
+#header .wrap {
+  background: none repeat scroll 0 0 #FFFFFF;
+  width: auto;
+}
+#rsvp {
+  background: none repeat scroll 0 0 #FEF041;
+	font-family: 'KnockoutHTF29-JuniorLiteweigh';
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#rsvp .inside {
+  height: 95px;
+  margin: 0 0 0 213px;
+  overflow: hidden;
+  padding: 20px 0 0 166px;
+  position: relative;
+  text-align: left;
+  width: 800px;
+}
+#rsvp h2 {
+  left: 0;
+  margin: 0 20px 0 0;
+  position: absolute;
+}
+#rsvp p {
+  clear: both;
+  color: #D53535;
+  line-height: 1;
+  margin: 20px 0 0;
+}
+#rsvp .rsvp-link {
+  background: url("../img/btn-x.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 34px;
+  position: absolute;
+  right: 80px;
+  top: 31px;
+  width: 34px;
+}
+#rsvp .another-wrap {
+  overflow:hidden;
+}
+#rsvp .input-wrap {
+  display: inline;
+  float: left;
+  width: 195px;
+}
+#rsvp label {
+  display: inline;
+  float: left;
+  margin: 0 0 2px;
+}
+#rsvp input.text {
+  height: 15px;
+  line-height: 15px;
+  padding: 0;
+  width: 170px;
+}
+#rsvp .submit {
+  background: url("../img/btn-submit.png") no-repeat scroll 0 0 transparent;
+  border: medium none;
+  cursor:pointer;
+  height: 0;
+  margin: 16px 0 0;
+  padding-top: 19px;
+  width: 56px;
+}
+
+
+
+
+#rsvp .close-btn {}
+#rsvp .rsvp-received {
+  font-size: 30px;
+  left: 160px;
+  position: absolute;
+  top: 39px;
+}
+#rsvp .error {
+  color: #D53535;
+  font-style: italic;
+  margin: 10px 0 0;
+  text-transform: none;
+}
+
+/* Navigation */
+#menu {
+  height: 67px;
+  margin: 0 auto;
+  width: 1000px;
+}
+#menu .nav {
+  list-style: none outside none;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 795px;
+}
+#menu .nav li {
+  display: inline;
+  float: left;
+  margin: 22px 49px 0 0;
+}
+#menu .nav li.last {
+  margin: 22px 0 0 0;
+}
+#menu .nav li a {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 30px;
+}
+#menu #nav-logo a {
+  background: url("../img/bg-menu.png") no-repeat scroll -104px -22px transparent;
+  width: 31px;
+}
+#menu #nav-our-story a {
+  background: url("../img/bg-menu.png") no-repeat scroll -183px -22px transparent;
+  width: 57px;
+}
+#menu #nav-photos a {
+  background: url("../img/bg-menu.png") no-repeat scroll -289px -22px transparent;
+  width: 42px;
+}
+#menu #nav-groomsment a {
+  background: url("../img/bg-menu.png") no-repeat scroll -380px -22px transparent;
+  width: 68px;
+}
+#menu #nav-bridesmaid a {
+  background: url("../img/bg-menu.png") no-repeat scroll -497px -22px transparent;
+  width: 70px;
+}
+#menu #nav-info a {
+  background: url("../img/bg-menu.png") no-repeat scroll -611px -22px transparent;
+  width: 102px;
+}
+#menu #nav-gifts a {
+  background: url("../img/bg-menu.png") no-repeat scroll -762px -22px transparent;
+  width: 29px;
+}
+#menu #nav-rsvp a {
+  background: url("../img/bg-menu.png") no-repeat scroll -840px -22px transparent;
+  width: 27px;
+}
+
+/* Generic slideshow styles */
+.slideshow .jcarousel-prev {
+  background: url("../img/icon-arrow-left.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  left: -20px;
+  position: absolute;
+  top: 230px;
+  width: 23px;
+  z-index: 2;
+}
+.slideshow .jcarousel-prev:hover {
+  opacity: 0.8;               /* Firefox, Safari and Chrome (WebKit), Opera */
+  filter: alpha(opacity=80);  /* IE */
+  zoom: 1;                    /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */    
+}
+
+.slideshow .jcarousel-next {
+  background: url("../img/icon-arrow-right.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  right: -20px;
+  position: absolute;
+  top: 230px;
+  width: 23px;
+  z-index: 2;
+}
+.slideshow .jcarousel-next:hover {
+  opacity: 0.8;               /* Firefox, Safari and Chrome (WebKit), Opera */
+  filter: alpha(opacity=80);  /* IE */
+  zoom: 1;                    /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */    
+}
+
+.slideshow-control {
+  list-style: none outside none;
+  margin: 0 auto;
+  overflow: auto;
+  width: 425px;
+}
+.slideshow-control li {
+  background: url("../img/bg-nav-circles.png") no-repeat scroll 0 0 transparent;
+  color:#2e2e2e;
+  cursor: pointer;
+  display: inline;
+  float: left;
+  font-family: 'KnockoutHTF49-Liteweight';
+  font-size: 11px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  width: 20px;
+}
+.slideshow-control li:hover,
+.slideshow-control li.active {
+  background-position:0 -20px;
+  color:#ffffff;
+}
+
+
+
+/* SECTIONS */
+.wrap {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 0 15px;
+  position: relative;
+  text-align: center;
+  width: 1000px;
+}
+.section {
+  background: url("../img/bg-section.png") repeat-x scroll 0 396px transparent;
+  padding: 110px 0 50px;
+  position:relative;
+}
+#section-1 {
+  background: url("../img/banner-2.jpg") no-repeat scroll center 67px #CFCFCF;
+  height: 563px;
+  padding-top: 67px;
+
+}
+#section-1 .wrap {
+  padding: 505px 0 22px;
+  position: static;
+}
+#section-1 .rsvp-link {
+  background: url("../img/btn-rsvp.png") repeat scroll 0 0 transparent;
+  display: block;
+  height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 82px;
+  width: 81px;
+}
+#section-2 {
+  background: none repeat scroll 0 0 transparent;
+}
+
+
+/* Photos */
+#section-3 {}
+#section-3 .slideshow {
+  background: url("../img/bg-photo-frame.png") no-repeat scroll 0 0 transparent;
+  height: 505px;
+  margin: 0 auto;
+  padding: 30px;
+  width: 853px;
+}
+#section-3 .slideshow li {
+  height: 505px;
+  list-style: none outside none;
+  width: 853px;
+}
+
+
+/* Groomsmen & Bridesmaids */
+#section-4 h2,
+#section-5 h2 {
+  left: 400px;
+  position: absolute;
+  top:0;
+}
+#section-4 .slideshow,
+#section-5 .slideshow {
+  height: 475px;
+  margin: 0 auto;
+  padding: 0 20px 0 10px;
+  width: 770px;
+}
+#section-4 .slideshow li,
+#section-5 .slideshow li {
+  height: 475px;
+  list-style: none outside none;
+  position:relative;
+  width: 770px;
+}
+#section-4 .slideshow .jcarousel-prev,
+#section-5 .slideshow .jcarousel-prev {top:275px;}
+
+#section-4 .slideshow .jcarousel-next,
+#section-5 .slideshow .jcarousel-next {top:275px;}
+
+#section-4 .slideshow .photo,
+#section-5 .slideshow .photo {
+  bottom: 0;
+  left: 50px;
+  position: absolute;
+}
+#section-4 .slideshow .person,
+#section-5 .slideshow .person {
+  background: url("../img/bg-groomsmen.png") no-repeat scroll 0 0 transparent;
+  bottom: 7px;
+  height: 246px;
+  padding: 25px 50px 40px 70px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  width: 428px;
+}
+#section-4 .slideshow .person .name,
+#section-5 .slideshow .person .name {
+  color: #555555;
+  font-size: 30px;
+  font-style: italic;
+  margin: 0 0 5px;
+}
+#section-4 .slideshow .person .title,
+#section-5 .slideshow .person .title {
+  color: #999999;
+  font-size: 18px;
+}
+#section-4 .slideshow .person .bio,
+#section-5 .slideshow .person .bio {
+  color: #8F8F8F;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 30px 0 0;
+}
+
+
+/* Groomsmen */
+#section-4 {}
+#section-4 .slideshow .item-1 .photo {}
+#section-4 .slideshow .item-2 .photo {left: 60px;}
+#section-4 .slideshow .item-3 .photo {left: 40px;}
+#section-4 .slideshow .item-4 .photo {left: 20px;}
+#section-4 .slideshow .item-5 .photo {bottom: 110px; left: 10px;}
+#section-4 .slideshow .item-6 .photo {left: 42px;}
+
+
+/* Bridesmaids */
+#section-5 {}
+#section-5 .slideshow-control li:hover,
+#section-5 .slideshow-control li.active {
+  background-position:0 -40px;
+  color:#ffffff;
+}
+#section-5 .slideshow .item-1 .photo {}
+#section-5 .slideshow .item-2 .photo {}
+#section-5 .slideshow .item-3 .photo {left:0px;}
+#section-5 .slideshow .item-4 .photo {left: 30px;}
+#section-5 .slideshow .item-5 .photo {bottom: 110px; left: 0px;}
+#section-5 .slideshow .item-6 .photo {}
+#section-5 .slideshow .person {background: url("../img/bg-bridesmaids.png") no-repeat scroll 0 0 transparent;}
+
+/* INFO - When, Where, How */
+#section-6 {background: none repeat scroll 0 0 transparent;}
+.box1-top {
+  background: url("../img/bg-box1-top.png") no-repeat scroll center top transparent;
+  margin: 0 auto 15px;
+  padding: 135px 0 0;
+  position: relative;
+  width: 739px;
+}
+.box1-middle {
+  background: url("../img/bg-box1-middle.png") repeat-y scroll center bottom transparent;
+  min-height: 50px;
+  padding: 15px 80px 5px;
+}
+.box1-bottom {
+  background: url("../img/bg-box1-bottom.png") no-repeat scroll center bottom transparent;
+  margin: 0 auto;
+  padding: 0 0 86px;
+  width: 731px;
+}
+
+#section-6 h3 {
+  color: #8A0000;
+  font-family: Arial;
+  font-family: 'KnockoutHTF48-Featherweight';
+  font-size: 40px;
+  line-height: 40px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50px;
+  width: 579px;
+}
+
+/* Gifts */
+#section-7 {background: none repeat scroll 0 0 transparent;}
+.box2-top {
+  background: url("../img/bg-box2-top.png") no-repeat scroll center top transparent;
+  margin: 15px auto 0;
+  padding: 48px 0 0;
+  position: relative;
+  width: 731px;
+}
+.box2-middle {
+  background: url("../img/bg-box2-middle.png") repeat-y scroll center bottom transparent;
+  min-height: 50px;
+  overflow: hidden;
+  padding: 0 68px;
+  text-align: left;
+  width: 595px;
+}
+.box2-bottom {
+  background: url("../img/bg-box2-bottom.png") no-repeat scroll center bottom transparent;
+  margin: 0 auto;
+  padding: 0 0 114px;
+  width: 731px;
+}

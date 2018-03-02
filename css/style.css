@@ -279,6 +279,8 @@ a.cd-read-more:hover{text-decoration:none; background-color: #424242;  }
   }
 }
 
+
+
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
